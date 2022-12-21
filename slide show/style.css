@@ -1,0 +1,93 @@
+body{
+    background-color: tan;
+}
+
+.img-container{
+    position: relative;
+}
+
+.slide{
+    display: none;
+}
+
+.prev , .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 30px;
+    color: snow;
+    font-size: 60px;
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    transition: 0.6s ease;
+}
+
+.next{
+    right: 0;
+}
+
+/*.next:hover , .prev:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+}*/
+
+.text{
+    color: seashell;
+    font-size: 45px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.number{
+    color: seashell;
+    font-size: 45px;
+    font-weight: lighter;
+    position: absolute;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    
+}
+
+.dot-container{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d7d7d7;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    margin-left: 15px;
+}
+
+.dot:hover , .active{
+    cursor: pointer;
+    background-color: slategray;
+}
+
+.fade{
+    -webkit-animation-name: fade ;
+    -webkit-animation-duration: 1.2s;
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
